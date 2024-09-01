@@ -1,5 +1,7 @@
+// This code is inspired by the YouTube video "Sine wave structures in p5.js | Coding Project #1" by [Colorful Coding] (Published: 2020-10-28). URL: https://www.youtube.com/watch?v=vmhRlDyPHMQ
+
 function setup() {
-  createCanvas(500, 500, WEBGL);
+  createCanvas(550, 550, WEBGL);
   angleMode(DEGREES);
 }
 
@@ -8,23 +10,25 @@ function draw() {
 
   noFill();
   rotateX(60);
-  let time = frameCount * 0.7; // Control animation speed
+  let time = frameCount * 0.7;
+  translate(0, 0, 15);
 
-  // Calculate the number of segments and their colors
-  let segments = 20;
-  let colors = [];
-  for (let i = 0; i < segments; i++) {
-    let t = map(i, 0, segments, 0, 1);
-    colors.push(lerpColor(color(255, 0, 0), color(0, 0, 255), t)); // Gradient from red to blue
-  }
+  //COLORS
+  for (let i = 1; i <= 20; i++) {
+    let r = map(sin(time + i * 10), -1, 1, 0, 255);
+    let g = map(sin(time + i * 10 + 120), -1, 1, 0, 255);
+    let b = map(sin(time + i * 10 + 240), -1, 1, 0, 255);
 
-  for (let i = 1; i <= segments; i++) {
-    stroke(colors[i % segments]); // Cycle through the colors
+    stroke(r, g, b);
+
+    //SHAPE
     beginShape();
     for (let j = 0; j < 360; j += 10) {
-      let rad = i * 15;
+      let rad = i * 10;
       let x = rad * cos(j);
       let y = rad * sin(j);
+
+      //ROTATION
       let z = sin(i * 10 + j + time) * -100;
 
       vertex(x, y, z);
