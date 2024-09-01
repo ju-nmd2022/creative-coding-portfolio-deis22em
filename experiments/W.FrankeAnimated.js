@@ -14,6 +14,7 @@ function draw() {
   translate(0, 0, 15);
 
   //COLORS
+  //Help from ChatGPT with a color error
   for (let i = 1; i <= 20; i++) {
     let r = map(sin(time + i * 10), -1, 1, 0, 255);
     let g = map(sin(time + i * 10 + 120), -1, 1, 0, 255);
