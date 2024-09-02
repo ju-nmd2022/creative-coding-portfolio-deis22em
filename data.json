@@ -30,8 +30,8 @@
   },
 
   {
-    "file": "experiments/SchotterSquare.js",
-    "name": "Version 3: I'm Just A Square",
+    "file": "experiments/Square.js",
+    "name": "Version 3: I'm Just A Square testtesttest",
     "description": "Explains the what and the why. What is the main idea? What is the purpose? Describes the coding process and implementation choices and gives a high level system overview."
   }
 ]
