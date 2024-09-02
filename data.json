@@ -6,14 +6,26 @@
   },
 
   {
-    "file": "experiments/W.FrankeAnimated.js",
+    "file": "experiments/WFrankeAnimated.js",
     "name": "Colorful Oszillogramme",
     "description": "Explains the what and the why. What is the main idea? What is the purpose? Describes the coding process and implementation choices and gives a high level system overview."
   },
 
   {
-    "file": "experiments/W.FrankeUpdated.js",
+    "file": "experiments/WFrankeUpdated.js",
     "name": "Colorful Squares",
+    "description": "Explains the what and the why. What is the main idea? What is the purpose? Describes the coding process and implementation choices and gives a high level system overview."
+  },
+
+  {
+    "file": "experiments/Schotter.js",
+    "name": "Recreation/Interpretation of Georg Ness Artwork 'Schotter'",
+    "description": "Explains the what and the why. What is the main idea? What is the purpose? Describes the coding process and implementation choices and gives a high level system overview."
+  },
+
+  {
+    "file": "experiments/SchotterAnimated.js",
+    "name": "Waterfall 'Schotter'",
     "description": "Explains the what and the why. What is the main idea? What is the purpose? Describes the coding process and implementation choices and gives a high level system overview."
   }
 ]
