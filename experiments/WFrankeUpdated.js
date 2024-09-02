@@ -1,7 +1,7 @@
 // This code is inspired by the YouTube video "Sine wave structures in p5.js | Coding Project #1" by [Colorful Coding] (Published: 2020-10-28). URL: https://www.youtube.com/watch?v=vmhRlDyPHMQ
 
 function setup() {
-  createCanvas(550, 550, WEBGL);
+  createCanvas(innerWidth, innerHeight, WEBGL);
   angleMode(DEGREES);
 }
 
