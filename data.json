@@ -1,31 +1,31 @@
 [
   {
     "file": "experiments/WFranke.js",
-    "name": "Recreation/Interpretation of Herbert W. Franke's Artwork 'Oszillogramme'",
-    "description": "Explains the what and the why. What is the main idea? What is the purpose? Describes the coding process and implementation choices and gives a high level system overview."
+    "name": "Interpretation - Oszillogramme",
+    "description": " Recreation/Interpretation of Herbert W. Franke's Artwork 'Oszillogramme'. -- Explains the what and the why. What is the main idea? What is the purpose? Describes the coding process and implementation choices and gives a high level system overview."
   },
 
   {
     "file": "experiments/WFrankeAnimated.js",
-    "name": "Colorful Oszillogramme",
+    "name": "Version 2: Colorful Oszillogramme",
     "description": "Explains the what and the why. What is the main idea? What is the purpose? Describes the coding process and implementation choices and gives a high level system overview."
   },
 
   {
     "file": "experiments/WFrankeUpdated.js",
-    "name": "Colorful Squares",
+    "name": "Version 3: Colorful Squares",
     "description": "Explains the what and the why. What is the main idea? What is the purpose? Describes the coding process and implementation choices and gives a high level system overview."
   },
 
   {
     "file": "experiments/Schotter.js",
-    "name": "Recreation/Interpretation of Georg Ness Artwork 'Schotter'",
-    "description": "Explains the what and the why. What is the main idea? What is the purpose? Describes the coding process and implementation choices and gives a high level system overview."
+    "name": "Interpretation - Schotter",
+    "description": "Recreation/Interpretation of Georg Ness Artwork 'Schotter' -- Explains the what and the why. What is the main idea? What is the purpose? Describes the coding process and implementation choices and gives a high level system overview."
   },
 
   {
     "file": "experiments/SchotterAnimated.js",
-    "name": "Waterfall 'Schotter'",
+    "name": "Version 2: Waterfall 'Schotter'",
     "description": "Explains the what and the why. What is the main idea? What is the purpose? Describes the coding process and implementation choices and gives a high level system overview."
   }
 ]
