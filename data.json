@@ -3,5 +3,17 @@
     "file": "experiments/WFranke.js",
     "name": "Recreation/Interpretation of Herbert W. Franke's Artwork 'Oszillogramme'",
     "description": "Explains the what and the why. What is the main idea? What is the purpose? Describes the coding process and implementation choices and gives a high level system overview."
+  },
+
+  {
+    "file": "experiments/W.FrankeAnimated.js",
+    "name": "Colorful Oszillogramme",
+    "description": "Explains the what and the why. What is the main idea? What is the purpose? Describes the coding process and implementation choices and gives a high level system overview."
+  },
+
+  {
+    "file": "experiments/W.FrankeUpdated.js",
+    "name": "Colorful Squares",
+    "description": "Explains the what and the why. What is the main idea? What is the purpose? Describes the coding process and implementation choices and gives a high level system overview."
   }
 ]
