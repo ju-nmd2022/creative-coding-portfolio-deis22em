@@ -1,5 +1,5 @@
 const numCols = 12;
-const numRows = 23;
+const numRows = 12;
 const squareSize = 20;
 
 let offsetX = 55;
@@ -14,18 +14,14 @@ function setup() {
   createCanvas(innerWidth, innerHeight);
   pixelX = width / 2 - (numCols * squareSize) / 2; // Center artwork
   pixelY = height / 2 - (numRows * squareSize) / 2; // Center artwork
-  currentColor = color(0); // Initial color
+  currentColor = color(255); // Initial color
 
-  frameRate(30); // Set frame rate
-  noLoop(); // Stop looping to create a static grid
+  frameRate(30);
 }
-function artwork() {
-  background(255); // Clear canvas with a solid background
 
-  noFill();
-  stroke(currentColor);
-  strokeWeight(1);
-  noLoop();
+function draw() {
+  background(0); // Clear canvas with a solid background
+
   // Update positions
   pixelX += dx;
   pixelY += dy;
@@ -40,32 +36,28 @@ function artwork() {
     changeColor(); // Change color
   }
 
+  noFill();
+  stroke(currentColor);
+  strokeWeight(1);
+
+  // Apply translation for the entire grid
+  push();
+  translate(pixelX, pixelY);
+
   // Draw the grid
   for (let col = 0; col < numCols; col++) {
     for (let row = 0; row < numRows; row++) {
       const x = col * squareSize;
       const y = row * squareSize;
 
-      push();
-      let deltaX = pow(random(-(y / numRows), y / numRows), 1) + squareSize;
-      let deltaY = pow(random(-(y / numRows), y / numRows), 1) + squareSize;
-      translate(pixelX + deltaX, pixelY + deltaY);
-
       rect(x, y, squareSize, squareSize);
-      pop();
     }
   }
-}
-function draw() {
-  artwork();
+
+  pop();
 }
 
 function changeColor() {
   // Change color randomly
   currentColor = color(random(255), random(255), random(255));
 }
-
-// Uncomment if you want to start animation on mouse press
-// function mousePressed() {
-// loop();  // Start continuous drawing
-//}
