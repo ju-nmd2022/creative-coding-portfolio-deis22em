@@ -12,7 +12,7 @@ const colors = [
 const maxLineLength = 10;
 
 function setup() {
-  createCanvas(400, 400);
+  createCanvas(innerWidth, innerHeight);
   for (let i = 0; i < num; i++) {
     let p = createVector(random(width), random(height));
     particles.push({
