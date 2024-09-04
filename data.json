@@ -33,5 +33,10 @@
     "file": "experiments/SchotterAnimated.js",
     "name": "Version 2: Waterfall 'Schotter'",
     "description": "Explains the what and the why. What is the main idea? What is the purpose? Describes the coding process and implementation choices and gives a high level system overview."
+  },
+  {
+    "file": "experiments/BlueLiteral.js",
+    "name": "Interpretation: 'Blue Literal - Flow field version'",
+    "description": "Explains the what and the why. What is the main idea? What is the purpose? Describes the coding process and implementation choices and gives a high level system overview."
   }
 ]

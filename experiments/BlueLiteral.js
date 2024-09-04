@@ -2,11 +2,11 @@ let particles = [];
 const num = 1000;
 const noiseScale = 0.01 / 2;
 const colors = [
-  "#003366", // Deep Navy Blue
-  "#0047AB", // Cobalt Blue
-  "#87CEEB", // Sky Blue
-  "#00FFFF", // Cyan Blue
-  "#F5F5F5", // Off-White
+  "#003366", //Some blue color
+  "#0047AB", // Some blue color
+  "#87CEEB", // Some blue color
+  "#00FFFF", // Cyan
+  "#F5F5F5", // Kinda white
   "#F5F5DC", // Beige
 ];
 const maxLineLength = 10;
@@ -19,7 +19,7 @@ function setup() {
       pos: p,
       prevPos: p.copy(),
       length: random(0.1, maxLineLength),
-      color: random(colors), // Random color including black
+      color: random(colors),
     });
   }
 
@@ -32,14 +32,14 @@ function draw() {
   for (let i = 0; i < num; i++) {
     let p = particles[i];
 
-    // Draw the line
+    //LINE
     if (dist(p.prevPos.x, p.prevPos.y, p.pos.x, p.pos.y) < width / 2) {
       stroke(p.color);
       strokeWeight(2);
       line(p.prevPos.x, p.prevPos.y, p.pos.x, p.pos.y);
     }
 
-    // Update the position based on Perlin noise
+    // PERLIN NOISE POSITION
     let n = noise(
       p.pos.x * noiseScale,
       p.pos.y * noiseScale,
@@ -51,14 +51,10 @@ function draw() {
     p.prevPos.set(p.pos);
     p.pos.add(direction);
 
-    // If a particle is close to the edge, reset it randomly within the canvas
+    // CONTINUE FLOW FIELDS
     if (p.pos.x < 0 || p.pos.x > width || p.pos.y < 0 || p.pos.y > height) {
       p.pos.set(random(width), random(height));
-      p.prevPos.set(p.pos); // Reset prevPos to avoid long lines
+      p.prevPos.set(p.pos);
     }
   }
-}
-
-function mouseReleased() {
-  noiseSeed(millis());
 }
