@@ -14,7 +14,7 @@
   {
     "file": "experiments/WFrankeUpdated.js",
     "name": "Version 3: Colorful Squares",
-    "description": "Explains the what and the why. What is the main idea? What is the purpose? Describes the coding process and implementation choices and gives a high level system overview."
+    "description": "I wanted to create something that looked like an old Windows screensaver, and I played around with the code for the previous artowork and this is the result.-- Describes the coding process and implementation choices and gives a high level system overview."
   },
 
   {
@@ -24,15 +24,15 @@
   },
 
   {
-    "file": "experiments/Square.js",
-    "name": "Version 3: I'm Just A Square",
-    "description": "Explains the what and the why. What is the main idea? What is the purpose? Describes the coding process and implementation choices and gives a high level system overview."
+    "file": "experiments/SchotterAnimated.js",
+    "name": "Version 2: Waterfall 'Schotter'",
+    "description": "It is a 'square waterfall', because I wanted to make it animated, and this way I thought was the best looking way while still keeping the multiple squares, and their rotation. At first I managed to create something that was similar to the first version (which looks the most like Schotter, but that also came with an annoying feature. So I went for this look instead."
   },
 
   {
-    "file": "experiments/SchotterAnimated.js",
-    "name": "Version 2: Waterfall 'Schotter'",
-    "description": "Explains the what and the why. What is the main idea? What is the purpose? Describes the coding process and implementation choices and gives a high level system overview."
+    "file": "experiments/Square.js",
+    "name": "Version 3: I'm Just A Square",
+    "description": "Again I was inspired by old windows screensavers. At first I wanted it to be the entire original Schotter artwork that would be flying around, but with each frame the squares are updated and changing position, which made it look glitchy, and not a look I was going for so I decided to do a simple square. Still keeping pretty much the same code as OG Schotter, but without the randomization, and jitter, etc. And this is where we ended up."
   },
   {
     "file": "experiments/BlueLiteral.js",
