@@ -38,5 +38,17 @@
     "file": "experiments/BlueLiteral.js",
     "name": "Interpretation: 'Blue Literal - Flow field version'",
     "description": "Explains the what and the why. What is the main idea? What is the purpose? Describes the coding process and implementation choices and gives a high level system overview."
+  },
+
+  {
+    "file": "experiments/BlueLiteralClick.js",
+    "name": "Blue Literal - Version 2: 'Click to Flow'",
+    "description": "Explains the what and the why. What is the main idea? What is the purpose? Describes the coding process and implementation choices and gives a high level system overview."
+  },
+
+  {
+    "file": "experiments/BlueLiteralAnotherOne.js",
+    "name": "Blue Literal - Version 3: 'Click to Color'",
+    "description": "A version of Blue Literal where you click the artwork to experience different colors of it... What is the main idea? What is the purpose? Describes the coding process and implementation choices and gives a high level system overview."
   }
 ]
