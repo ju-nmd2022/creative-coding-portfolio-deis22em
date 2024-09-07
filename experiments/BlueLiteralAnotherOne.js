@@ -3,15 +3,45 @@
 let particles = [];
 const num = 1000;
 const noiseScale = 0.01 / 2;
+
 const colors = [
-  "#003366", //Some blue color
+  "#003366", // Some blue color
   "#0047AB", // Some blue color
   "#87CEEB", // Some blue color
   "#00FFFF", // Cyan
   "#F5F5F5", // Kinda white
   "#F5F5DC", // Beige
+  "#fc60a8", // piiink
+  "#7a28cb", // purple
+  "#ceec97", // green
 ];
+
+const colorTwo = [
+  "#CDB4DB", //color
+  "#FFC8DD", //color
+  "#FFAFCC", //color
+  "#BDE0FE", //color
+  "#A2D2FF", //color
+];
+
+const colorThree = [
+  "#4CC9F0", //color
+  "#4361EE", //color
+  "#3A0CA3", //color
+  "#7209B7", //color
+  "#F72585", //color
+];
+
+const colorFour = [
+  "#FFDC5E", //color
+  "#FFBF81", //color
+  "#FFA3A5", //color
+  "#FF86C8", //color
+  "#FF69EB", //color
+];
+
 const maxLineLength = 10;
+let currentColorSet = 0;
 
 function setup() {
   createCanvas(innerWidth, innerHeight);
@@ -28,10 +58,16 @@ function setup() {
   clear();
 }
 
-//Help from ChatGPT with some errors with the flow field in the following function
-
 function draw() {
-  background(25, 25, 50);
+  if (currentColorSet === 1) {
+    background("#ff6aa0"); // Background for colorTwo
+  } else if (currentColorSet === 2) {
+    background("#0b1e79"); // Background for colorThree
+  } else if (currentColorSet === 3) {
+    background("#ff4c49"); //colorFour with gradient
+  } else {
+    background(25, 25, 50); // default background for colors
+  }
 
   for (let i = 0; i < num; i++) {
     let p = particles[i];
@@ -60,5 +96,24 @@ function draw() {
       p.pos.set(random(width), random(height));
       p.prevPos.set(p.pos);
     }
+  }
+}
+
+function mousePressed() {
+  currentColorSet = (currentColorSet + 1) % 4;
+
+  let newColors;
+  if (currentColorSet === 0) {
+    newColors = colors;
+  } else if (currentColorSet === 1) {
+    newColors = colorTwo;
+  } else if (currentColorSet === 2) {
+    newColors = colorThree;
+  } else if (currentColorSet === 3) {
+    newColors = colorFour;
+  }
+
+  for (let i = 0; i < num; i++) {
+    particles[i].color = random(newColors);
   }
 }
