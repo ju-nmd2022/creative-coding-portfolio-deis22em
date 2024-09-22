@@ -50,5 +50,20 @@
     "file": "experiments/BlueLiteralAnotherOne.js",
     "name": "Blue Literal - Version 3: 'Click to Color'",
     "description": "A version of Blue Literal where you click the artwork to experience different colors of it... What is the main idea? What is the purpose? Describes the coding process and implementation choices and gives a high level system overview."
+  },
+  {
+    "file": "experiments/iceSwirls.js",
+    "name": "Additional Artwork: 'Ice Swirls'",
+    "description": "An additional artwork, where the idea is to mimic ice swirls. Using lerpColors I was able to create the 'gradient' effect. This artwork is not inspired by any artist's previous work, it is straight from my own brain."
+  },
+  {
+    "file": "experiments/iceSwirlsPixieDust.js",
+    "name": "Additional Artwork: 'Ice Swirls - Version 2: Pixie Dust'",
+    "description": "A version of 'Ice Swirls', where I basically just played around with the different values of the code and accidently ended up here. I like the small ellipses that make it look more 'magical' and mimics pixie dust. Was a huge fan of Tinkerbell when I was a kid, and this artwork kind of reminds me of Tinkerbell Secret of the Wings, for some context to the name."
+  },
+  {
+    "file": "experiments/iceSwirlsColor.js",
+    "name": "Additional Artwork: 'Ice Swirls - Version 3: Cool colors'",
+    "description": "A version of 'Ice Swirls' where it is no longer ice swirls at all. Played around with lerpColors and with these changes it was made best with a black background. The colors randomly change when page is refreshed."
   }
 ]
