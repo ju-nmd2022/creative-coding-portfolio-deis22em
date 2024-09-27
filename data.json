@@ -2,54 +2,54 @@
   {
     "file": "experiments/WFranke.js",
     "name": "Interpretation - Oszillogramme",
-    "description": "Recreation/Interpretation of Herbert W. Franke's Artwork 'Oszillogramme'. -- Explains the what and the why. What is the main idea? What is the purpose? Describes the coding process and implementation choices and gives a high level system overview."
+    "description": "Recreation/Interpretation of Herbert W. Franke's Artwork 'Oszillogramme'."
   },
 
   {
     "file": "experiments/WFrankeAnimated.js",
-    "name": "Version 2: Colorful Oszillogramme",
-    "description": "Explains the what and the why. What is the main idea? What is the purpose? Describes the coding process and implementation choices and gives a high level system overview."
+    "name": "Oszillogramme - Version 2: Colorful Oszillogramme",
+    "description": "Made it animated and colorful."
   },
 
   {
     "file": "experiments/WFrankeUpdated.js",
-    "name": "Version 3: Colorful Squares",
-    "description": "I wanted to create something that looked like an old Windows screensaver, and I played around with the code for the previous artowork and this is the result.-- Describes the coding process and implementation choices and gives a high level system overview."
+    "name": "Oszillogramme - Version 3: Colorful Squares",
+    "description": "I wanted to create something that looked like an old Windows screensaver, and I played around with the code for the previous artowork and this is the result."
   },
 
   {
     "file": "experiments/Schotter.js",
     "name": "Interpretation - Schotter",
-    "description": "Recreation/Interpretation of Georg Ness Artwork 'Schotter' -- Explains the what and the why. What is the main idea? What is the purpose? Describes the coding process and implementation choices and gives a high level system overview."
+    "description": "Recreation/Interpretation of Georg Ness Artwork 'Schotter'."
   },
 
   {
     "file": "experiments/SchotterAnimated.js",
-    "name": "Version 2: Waterfall 'Schotter'",
-    "description": "It is a 'square waterfall', because I wanted to make it animated, and this way I thought was the best looking way while still keeping the multiple squares, and their rotation. At first I managed to create something that was similar to the first version (which looks the most like Schotter, but that also came with an annoying feature. So I went for this look instead."
+    "name": "Schotter - Version 2: Waterfall 'Schotter'",
+    "description": "It is a 'square waterfall', because I wanted to make it animated, and this way I thought was the best looking way while still keeping the multiple squares, and their rotation. At first I managed to create something that was similar to the first version (which looks the most like Schotter, but that also came with an annoying feature (sorta glitching). So I went for this look instead."
   },
 
   {
     "file": "experiments/Square.js",
-    "name": "Version 3: I'm Just A Square",
-    "description": "Again I was inspired by old windows screensavers. At first I wanted it to be the entire original Schotter artwork that would be flying around, but with each frame the squares are updated and changing position, which made it look glitchy, and not a look I was going for so I decided to do a simple square. Still keeping pretty much the same code as OG Schotter, but without the randomization, and jitter, etc. And this is where we ended up."
+    "name": "Schotter - Version 3: I'm Just A Square",
+    "description": "A very random version of Schotter. The square changes color when hitting the border of the canvas."
   },
   {
     "file": "experiments/BlueLiteral.js",
-    "name": "Interpretation: 'Blue Literal - Flow field version'",
-    "description": "Explains the what and the why. What is the main idea? What is the purpose? Describes the coding process and implementation choices and gives a high level system overview."
+    "name": "Interpretation: Blue Literal - Flow field version",
+    "description": "This is an effort to recreate Blue Literal by Tyler Hobbs, but in flow field style."
   },
 
   {
     "file": "experiments/BlueLiteralClick.js",
     "name": "Blue Literal - Version 2: 'Click to Flow'",
-    "description": "Explains the what and the why. What is the main idea? What is the purpose? Describes the coding process and implementation choices and gives a high level system overview."
+    "description": "Click the screen to change the flow of the field."
   },
 
   {
     "file": "experiments/BlueLiteralAnotherOne.js",
     "name": "Blue Literal - Version 3: 'Click to Color'",
-    "description": "A version of Blue Literal where you click the artwork to experience different colors of it... What is the main idea? What is the purpose? Describes the coding process and implementation choices and gives a high level system overview."
+    "description": "A version of Blue Literal where you click the artwork to experience different colors of it."
   },
   {
     "file": "experiments/iceSwirls.js",
@@ -64,6 +64,12 @@
   {
     "file": "experiments/iceSwirlsColor.js",
     "name": "Additional Artwork: 'Ice Swirls - Version 3: Cool colors'",
-    "description": "A version of 'Ice Swirls' where it is no longer ice swirls at all. Played around with lerpColors and with these changes it was made best with a black background. The colors randomly change when page is refreshed."
+    "description": "A version of 'Ice Swirls' where it is no longer ice swirls at all. Played around with lerpColors and with these changes it was made best with a black background."
+  },
+
+  {
+    "file": "experiments/tone.js",
+    "name": "'I'm just A Square' with Sound",
+    "description": "This is pretty much the same code as 'I'm Just A Square' except the speed has been ramped up to play Twinkle Twinkle Little Star faster. Each time the square hits the border of the canvas it plays the next note in the song. And when the song is over (aka all notes have been played in the array) it starts from the very first note again."
   }
 ]
