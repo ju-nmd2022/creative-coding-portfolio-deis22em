@@ -70,6 +70,6 @@
   {
     "file": "experiments/tone.js",
     "name": "'I'm just A Square' with Sound",
-    "description": "This is pretty much the same code as 'I'm Just A Square' except the speed has been ramped up to play Twinkle Twinkle Little Star faster. Each time the square hits the border of the canvas it plays the next note in the song. And when the song is over (aka all notes have been played in the array) it starts from the very first note again."
+    "description": "This is pretty much the same code as 'I'm Just A Square' except the speed has been ramped up to play the song faster. Each time the square hits the border of the canvas it plays the next note in the song. And when the song is over (aka all notes have been played in the array) it starts from the very first note again."
   }
 ]

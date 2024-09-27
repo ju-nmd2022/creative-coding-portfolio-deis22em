@@ -1,49 +1,28 @@
 const synth = new Tone.Synth().toDestination();
 
-//twinkle twinkle little star - chatgpt knew the notes for the song
+// Brahms' Lullaby notes
 const song = [
-  "C4",
-  "C4",
   "G4",
+  "D5",
+  "B4",
   "G4",
-  "A4",
-  "A4",
-  "G4",
-  "F4",
-  "F4",
-  "E4",
-  "E4",
-  "D4",
-  "D4",
-  "C4",
-  "G4",
-  "G4",
-  "F4",
-  "F4",
-  "E4",
-  "E4",
-  "D4",
-  "G4",
-  "G4",
-  "F4",
-  "F4",
-  "E4",
-  "E4",
-  "D4",
-  "C4",
-  "C4",
-  "G4",
-  "G4",
-  "A4",
+  "C5",
+  "B4",
   "A4",
   "G4",
-  "F4",
-  "F4",
-  "E4",
-  "E4",
-  "D4",
-  "D4",
-  "C4",
+  "G4",
+  "D5",
+  "B4",
+  "G4",
+  "C5",
+  "B4",
+  "A4",
+  "G4",
+  "E5",
+  "E5",
+  "D5",
+  "C5",
+  "G4",
 ];
 
 let currentNote = 0;
@@ -54,8 +33,8 @@ const squareSize = 20;
 
 let pixelX;
 let pixelY;
-let dx = 10;
-let dy = 10;
+let dx = 10; // Horizontal speed
+let dy = 10; // Vertical speed
 let currentColor;
 
 function setup() {
@@ -70,18 +49,23 @@ function setup() {
 function draw() {
   background(0);
 
+  // Move the square
   pixelX += dx;
   pixelY += dy;
 
+  // Check for collisions with the canvas edges
   if (pixelX < 0 || pixelX + numCols * squareSize > width) {
-    dx *= -1;
+    dx *= -1; // Reverse horizontal direction
     changeColor();
+    playNextNote(); // Play the note when hitting the edge
   }
   if (pixelY < 0 || pixelY + numRows * squareSize > height) {
-    dy *= -1;
+    dy *= -1; // Reverse vertical direction
     changeColor();
+    playNextNote(); // Play the note when hitting the edge
   }
 
+  // Draw the square
   noFill();
   stroke(currentColor);
   strokeWeight(1);
@@ -109,19 +93,18 @@ function draw() {
 }
 
 function changeColor() {
-  currentColor = color(random(255), random(255), random(255));
-  playNextNote();
+  currentColor = color(random(255), random(255), random(255)); // Change to a random color
 }
 
 function playNextNote() {
   const now = Tone.now();
   const note = song[currentNote];
 
-  synth.triggerAttackRelease(note, "8n", now);
+  synth.triggerAttackRelease(note, "8n", now); // Play the current note
 
-  currentNote++;
+  currentNote++; // Move to the next note
 
   if (currentNote >= song.length) {
-    currentNote = 0;
+    currentNote = 0; // Reset to the beginning of the song
   }
 }
